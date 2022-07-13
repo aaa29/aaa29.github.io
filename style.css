@@ -5,14 +5,14 @@
   --clr-primary-400: hsl(266, 45%, 59%);
   --clr-primary-300: hsl(246, 38%, 66%);
 
-  --clr-neutral-200: hsl(276, 9%, 79%);
+  --clr-neutral-200: hsl(274, 17%, 92%);
 
   --clr-accent-100: #f7ece1;
 
   /* font size */
-  --fs-100: .8rem;
-  --fs-200: 1.2rem;
-  --fs-800: 1.5rem;
+  --fs-100: 1.5rem;
+  --fs-200: 1.8rem;
+  --fs-800: 2.5rem;
 
   /* font weight */
   --fw-regular: 300;
@@ -20,11 +20,8 @@
   --fw-bold: 800;
 
   /* font family */
-  --ff-primary: "Press Start 2P", cursive;
+  --ff-primary: "EB Garamond", serif;
 }
-
-
-
 
 /* Box sizing rules */
 *,
@@ -95,9 +92,6 @@ select {
   }
 }
 
-
-
-
 /* utility classes */
 
 .text-primary-800 {
@@ -162,24 +156,35 @@ select {
   font-weight: var(--fw-bold);
 }
 
-
 body {
-    font-family: var(--ff-primary);
-    font-size : var(--fs-100);
-    font-weight: var(--fw-regular);
-    color: var(--clr-primary-600);
-    background-color: var(--clr-accent-100);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-600);
+  background-color: var(--clr-neutral-200);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 h1 {
-    max-width: 50%;
-    padding: 0;
+  padding: 0;
+  margin-top: 2em;
+  margin-left: 2rem;
+}
+
+@media (min-width: 50em) {
+  h1 {
+    max-width: 30%;
     margin-left: auto;
     margin-right: auto;
+  }
 }
 
 p {
-    margin: 3rem;
-    text-align: center;
+  margin: 3rem;
+  text-align: center;
 }
